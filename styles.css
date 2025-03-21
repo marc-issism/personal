@@ -113,7 +113,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height:70px;
+    min-height: var(--deadSpace);
 }
 
 .pivot {
@@ -122,6 +122,7 @@ body {
     padding-left: 6px;
     font-family: TorontoSubway;
     user-select: none;
+    max-width: 550px;
 }
 
 .pivot:hover {
