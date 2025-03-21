@@ -3,131 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
-    
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Scroll and zoom canva: https://codepen.io/chengarda/pen/wRxoyB -->
-    <!-- Visualizing Metro Stations: https://codepen.io/maccc/pen/WNYvqPE -->
-    <!-- TODO
-        * make other formats of Toronto Subway font
-        * fix hover over yellow line warp
-    -->
+    <title>Document</title>
+
 </head>
 <body>
 
-    <div class="page-title">
-        <div class="name"> Marcus Cua </div>
-        <div class="job-title"> Software Developer</div>
-    </div>
-
-    <div class="metro-lines">
-        <div class="horizontal-metro-line" id="first-station">
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="interchange-station-label"> Contact Information </span>
-                <div class="vertical-connector"></div>
-            </div>
-            <div class="horizontal-connector"></div>
-
+    <div class="title">
+        <div class="full-name">
+            Marcus Cua
         </div>
-
-        <div class="horizontal-metro-line" id="green-line">
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="interchange-station-label"> Education </span>
-                <div class="vertical-connector"></div>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">University of Toronto</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">YU3</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">YU4</span>
-            </div>
-        </div>
-        
-        <div class="horizontal-metro-line" id="purple-line">
-            <div class="station" id="interchange">
-                <div class="station-circle"><div class="inner-circle"></div></div>
-                <span class="interchange-station-label"> Experience </span>
-                <div class="vertical-connector"></div>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Web Developer Intern</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Automation Developer Intern</span>
-            </div>
-        </div>
-        
-        <div class="horizontal-metro-line" id="blue-line">
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="interchange-station-label"> Projects </span>
-                <div class="vertical-connector"></div>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Life Tracker React App</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">AI Screenshot Translator</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Toronto Asian Art Museum App</span>
-            </div>
-        </div>
-
-        <div class="horizontal-metro-line" id="orange-line">
-            <div class="station">
-                <div class="station-circle"><div class="inner-circle"></div></div>
-                <span class="interchange-station-label"> Skills </span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Interpersonal</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Programming/Frameworks</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Database</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Productivity</span>
-            </div>
-            <div class="horizontal-connector"></div>
-            <div class="station">
-                <div class="station-circle"></div>
-                <span class="station-label">Technical Knowledge</span>
-            </div>
-            
+        <div class="job-title">
+            Software Developer
         </div>
     </div>
+    
+    <div class="metro">
+        <!-- About Me -->
+        <div class="block" id="block1">
+            <div class="line">
+                <div class="station-col">
+                    <div class="station-circle"></div>
+                    <div class="vertical-line"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="pivot"><p>About Me</p></div>
+                <div class="words">assssssssssssssssss</div>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="block" id="block2">
+            <div class="line">
+                <div class="station-col">
+                    <div class="station-circle"></div>
+                    <div class="vertical-line"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="pivot"><p>Contact Information</p></div>
+                <div class="words">a</div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="block" id="block3">
+            <div class="line">
+                <div class="station-col">
+                    <div class="station-circle"></div>
+                    <div class="vertical-line"></div>
+                </div>
+            </div>
+            <div class="dead-space"><p>Education</p></div>
+            <div class="content">
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Education 1</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Education 2</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="block" id="block4">
+            <div class="line">
+                <div class="station-col">
+                    <div class="station-circle"></div>
+                    <div class="vertical-line"></div>
+                </div>
+            </div>
+            <div class="dead-space"><p>Experience</p></div>
+            <div class="content">
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Experience 1</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Experience 1</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="block" id="block5">
+            <div class="line">
+                <div class="station-col">
+                    <div class="station-circle"></div>
+                    <div class="vertical-line"></div>
+                </div>
+            </div>
+            <div class="dead-space"><p>Projects</p></div>
+            <div class="content">
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Project 1</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Project 1</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Project 1</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="block" id="block6">
+            <div class="line">
+                <div class="station-col">
+                    <div class="station-circle"></div>
+                </div>
+            </div>
+            <div class="dead-space"><p>Skills</p></div>
+            <div class="content">
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Skills</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Skills</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Skills</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Skills</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            <div class="vertical-line"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Skills</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="line">
+                        <div class="station-col">
+                            <div class="station-circle"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="pivot"><p>Skills</p></div>
+                        <div class="words">a</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="pivot.js"></script>
 
 </body>
 </html>

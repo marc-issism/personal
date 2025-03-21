@@ -3,132 +3,118 @@
     src: url("./TorontoSubway.ttf");
 }
 
-html {
+:root {
+    --circleSize: 20px;
+    --lineThickness: 7px;
+    --wordsHeight: 200px;
+    --deadSpace: 90px;
+    --headerFontSize: 45px;
+    --subHeaderFontSize: 35px;
+    --paragraphSize: 25px;
+}
+
+.title {
     font-family: TorontoSubway;
-    background-color: rgb(11, 11, 11);
-    font-size: 1.3em;
-    color: white;
-}
-
-
-.metro-lines {
-    position: relative;
-    display: block;
-    width: 90%;
-    z-index: 0;
-    margin-left: 5%;
-    margin-top: 2.5%;
-}
-
-.horizontal-metro-line {
-    position: relative;
-    display: flex;
-    height: 300px;
-    place-content: left;
-}
-
-
-
-.station {
-    position: relative;
     text-align: center;
-    z-index: 1;
 }
+
+.active {
+    display: block;
+}
+
+.metro {
+    position: absolute;
+    left: 40%;
+    top: 90px;
+}
+
+.block {
+    display: flex;
+}
+
+.line {
+    display: flex;
+}
+
 
 .station-circle {
     position: relative;
-    --size: 20px;
-    height: var(--size);
-    width: var(--size);
+    width: var(--circleSize);
+    height: var(--circleSize);
     border-radius: 50%;
+    border: calc(var(--circleSize)/4) solid black;
     background-color: white;
-    border: calc(var(--size)/4) solid black;
     z-index: 2;
 }
 
 .station-circle:hover {
     background-color: gray;
-    height: 30px;
-    width: 30px;
-    transform: translateY(-15%);
 }
 
-
-
-.metro-lines
-.vertical-connector {
-    background-color: #F6BF00;
-}
-.vertical-connector {
+.vertical-line {
+    content: "";
     position: relative;
+    width: var(--lineThickness);
     height: 100%;
-    width: 7px;
-    background-color: black;
-    left: 40%;
-    bottom: 7%;
+    background-color: #F8C400;
+    transform: translate(11.5px, -1px);
+    z-index: 0;
 }
 
-.horizontal-connector {
+#block3 .content .vertical-line, #block3 .dead-space {
+    background-color: #089143; 
+}
+
+#block4 .content .vertical-line, #block4 .dead-space {
+    background-color: #0091E2; 
+}
+
+#block5 .content .vertical-line, #block5 .dead-space {
+    background-color: #96467B; 
+}
+
+#block6 .content .vertical-line, #block6 .dead-space {
+    background-color: #F87101; 
+}
+
+.pivot {
     position: relative;
-    width: 300px;
-    height: 7px;
-    transform: translateY(150%);
-    z-index:0;
+    width: 100%;
+    height: calc(var(--circleSize) + 2*(var(--circleSize)/4) + 40px);
+    user-select: none;
 }
 
 
-#green-line
-.horizontal-connector {
-    background-color: #089143;
-}
-#purple-line
-.horizontal-connector {
-    background-color: #96467B;
-}
-#blue-line
-.horizontal-connector {
-    background-color: #0091E2;
-}
-#orange-line
-.horizontal-connector {
-    background-color: orange;
+.pivot:hover {
+    cursor: pointer;
 }
 
+.pivot p {
+    transform: translate(5px, -10px);
+    font-family: TorontoSubway;
+}
 
+.dead-space {
+    position: relative;
+    width: var(--deadSpace);
+    content: "";
+    height: var(--lineThickness);
+    transform: translate(-10px, 11.5px);
+    background-color: black;
+    z-index: 0;
+    margin-right: -12px;
+}
 
-.interchange-station-label {
+.dead-space p {
     position: absolute;
-    width: 500px;
-    text-align: left;
-    padding-left: 10px;
-    transform: translateY(18%);
-
+    transform: translate(10px, -40px);
+    font-family: TorontoSubway;
 }
 
-#first-station .interchange-station-label {
-    transform: translate(2%, -110%);
- }
-
-
-
-.station-label {
-    position: absolute;
-    width: 500px;
-    transform: translate(-50%, 20%);
+.words {
+    min-height: var(--wordsHeight);
+    display: none;
+    overflow: hidden;
 }
-
-.page-title {
-    text-align: center;
-    padding-top: 2%;
-}
-
-.name {
-    font-size: 65px;
-}
-
-.job-title {
-    font-size: 35px;
-}
-
 
 
