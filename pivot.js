@@ -4,9 +4,9 @@ const pivots = document.getElementsByClassName('pivot');
 
 for (let i = 0; i < pivots.length; i++) {
     pivots[i].addEventListener('click', function() {
-
+        
         // Give or take away 'active' class from this element
-        //this.classList.toggle('active');
+        // this.classList.toggle('active');
 
         // Toggle the visibility of this element
         const words = this.nextElementSibling;

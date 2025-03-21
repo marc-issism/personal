@@ -11,21 +11,46 @@
     --headerFontSize: 45px;
     --subHeaderFontSize: 35px;
     --paragraphSize: 25px;
+    --contentFont: monospace;
 }
 
-.title {
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
     font-family: TorontoSubway;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
-.active {
-    display: block;
+.marcus-circle {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcus-circle-number {
+    font-family: Arial;
+    font-size: 20px;
+    color: black;
 }
 
 .metro {
-    position: absolute;
-    left: 40%;
-    top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: center;
+
 }
 
 .block {
@@ -77,21 +102,36 @@
     background-color: #F87101; 
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-items: top;
+    align-items: left;
+    min-height:50px;
+}
+
 .pivot {
-    position: relative;
-    width: 100%;
-    height: calc(var(--circleSize) + 2*(var(--circleSize)/4) + 40px);
+    height: 30px;
+    display: block;
+    font-family: TorontoSubway;
     user-select: none;
 }
 
-
 .pivot:hover {
-    cursor: pointer;
+    cursor: pointer;    
+    color: rgb(101, 101, 101);
+}
+.pivot p {
+    transform: translate(6px, -11.5px);
 }
 
-.pivot p {
-    transform: translate(5px, -10px);
-    font-family: TorontoSubway;
+.words {
+    font-family: var(--contentFont);
+    padding-left: 6px;
+    padding-bottom: 30px;
+    padding-top: -6px;
+    display: none;
+    overflow: hidden;
 }
 
 .dead-space {
@@ -111,10 +151,7 @@
     font-family: TorontoSubway;
 }
 
-.words {
-    min-height: var(--wordsHeight);
-    display: none;
-    overflow: hidden;
-}
+
+
 
 
