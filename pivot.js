@@ -11,11 +11,11 @@ for (let i = 0; i < pivots.length; i++) {
         // Toggle the visibility of this element
         const words = this.nextElementSibling;
         
-        if (words.style.display === 'block') {
+        if (words.style.display === 'flex') {
             words.style.display = 'none';
         }
         else {
-            words.style.display = 'block';
+            words.style.display = 'flex';
         }
 
     });
