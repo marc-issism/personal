@@ -5,9 +5,10 @@
 
 :root {
     --circleSize: 20px;
-    --lineThickness: 7px;
+    --lineThickness: 12px;
     --wordsHeight: 200px;
-    --deadSpace: 105px;
+    --deadSpace: 115px;
+    --deadSpaceVertical: 55px;
     --titleFontSize: 35px;
     --headerFontSize: 24px;
     --subHeaderFontSize: 18px;
@@ -19,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fef9f3;
 }
 
 .page-header {
@@ -62,34 +64,41 @@ body {
 
 .block {
     display: flex;
+    width: 90%;
+
 }
 
 .line {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .station-circle {
-    position: relative;
-    width: var(--circleSize);
-    height: var(--circleSize);
+    min-width: var(--circleSize);
+    min-height: var(--circleSize);
     border-radius: 50%;
     border: calc(var(--circleSize)/4) solid black;
     background-color: white;
     z-index: 2;
 }
 
+
+
 .station-circle:hover {
     background-color: gray;
 }
 
+
 .vertical-line {
-    content: "";
     position: relative;
+    margin-top: -15px;
+    margin-bottom: -15px;
     width: var(--lineThickness);
     height: 100%;
     background-color: #F8C400;
-    transform: translate(11.5px, -1px);
+    /* transform: translate(11.5px, -1px); */
     z-index: 0;
 }
 
@@ -113,7 +122,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height: var(--deadSpace);
+}
+
+.content::after{
+    min-height: var(--deadSpaceVertical);
+    content: "";
 }
 
 .pivot {
@@ -144,18 +157,17 @@ body {
     flex-direction: column;
     font-family: var(--contentFont);
     padding-left: 6px;
-    margin-bottom: 10px;
-    min-height: 50px;
     overflow: hidden;
     align-items: center;
 }
 
 .dead-space {
     position: relative;
-    width: var(--deadSpace);
-    content: "";
+    min-width: var(--deadSpace);
+    margin-left: -15px;
+    margin-top: 8px;
     height: var(--lineThickness);
-    transform: translate(-10px, 11.5px);
+    /* transform: translate(-10px, 11.5px); */
     background-color: black;
     z-index: 0;
     margin-right: -12px;
@@ -166,6 +178,8 @@ body {
     transform: translate(10px, -40px);
     font-family: TorontoSubway;
 }
+
+
 
 
 
